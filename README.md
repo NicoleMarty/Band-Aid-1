@@ -1,3 +1,8 @@
 # Band Aid Music App
-![Wireframe_1](/images/wireframe_1.png)
-Format: ![Wireframes_1](url)
+
+## Initial Wireframes
+![home_page](/images/home_page.png)
+Format: ![on_search](url)
+
+![on_search](/images/on_search.png)
+Format: ![on_search](url)
