@@ -9,7 +9,7 @@ A research tool for music junkies needing a quick, on-the-go method of finding n
 2. Millennials listening to music at work who want to stay on top of music trends.
 3. Those looking to learn more about a genre or subgenre.
 
-### Why create this app?
+## Why create this app?
 #### Music is a universal connector both on and offline. 
 A classmate called me out on my Trampled by Turtles hat and was overcome with joy to find a fellow fan. I swiftly let him down via my lack of folk music knowledge because I lack time to research on my own time and there was no way I was remembering all the artists he was rambling off. Despite letting him down, this was the first interaction I had with a classmate outside of the classroom.
 
