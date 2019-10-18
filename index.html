@@ -14,22 +14,20 @@
     <script type="text/javascript" src="assets/Javascript/materialize.min.js"></script>
 </head>
 
+<!-- START BODY -->
+
 <body class="#000000 black">
-    <!-- Header Content DO NOT DELETE -->
+    <!-- HEADER CONTENT - DO NOT DELETE MUST BE WRAPPED IN HEADER ELEMENT -->
     <header class="#000000 black">
         <!-- navbar content here  -->
         <nav>
             <div class="nav-wrapper #212121 grey darken-4">
                 <a href="#!" class="brand-logo center"><img src="assets/images/logo-yellow.png" style="width:20%"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
             </div>
         </nav>
-
-
     </header>
-
-    <!-- UPPER RIGHT TARGET -->
+    <!-- UPPER RIGHT TARGET (DISPLAYS LYRICS)-->
     <!-- Element Showed -->
     <div class="right">
         <a id="menu" class="waves-effect waves-light btn btn-floating #000000 black"></a>
@@ -42,8 +40,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Main Page Content DO NOT DELETE -->
+    <!-- MAIN CONTENT - DO NOT DELETE MUST BE WRAPPED IN MAIN ELEMENT-->
     <main>
         <!-- SLIDE OUT SIDE NAV -->
         <ul id="slide-out" class="sidenav">
@@ -56,8 +53,6 @@
                     <a href="#user"><img class="circle" src="assets/images/logo-black.png"></a>
                 </div>
             </li>
-
-
             <ul class="collection with-header">
                 <li class="collection-header">
                     <h4>Liked Artists</h4>
@@ -67,7 +62,6 @@
                 </div>
                 <p><button class="waves-effect waves-light btn #212121 grey darken-4" id="clearLiked">Clear Liked</button></p>
             </ul>
-
             <ul class="collection with-header">
                 <li class="collection-header">
                     <h4>Search History</h4>
@@ -77,22 +71,16 @@
                 </div>
                 <p><button class="waves-effect waves-light btn #212121 grey darken-4" id="clearHistory">Clear History</button></p>
             </ul>
-
             <li>
                 <div class="divider"></div>
             </li>
-
         </ul>
         <a href="#" style="color:white;" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-
-
         <!-- CONTENT PANEL -->
-
         <!-- SEARCH BAR -->
-        <div class="row">
+        <div class="row" style="margin-bottom: 0px;">
             <div class="col s12 m12 l12">
-                <div class="container">
+                <div class="container" style="margin-bottom: 0px;">
                     <div class="row">
                         <div class="col-lg">
                             <form class="form-inline mr-auto">
@@ -101,16 +89,15 @@
                             </form>
                         </div>
                     </div>
-
                     <!-- BAND IMAGE -->
-                    <div class="row">
+                    <div class="row" style="margin-bottom: 0px;">
                         <div class="col s12 m12 l12 center-align">
                             <h4 style="color:white" id="artist"></h4>
                             <br></br>
                             <img class="img-responsive" style="max-width:400px" src="assets/images/logo-black.png">
                             <br></br>
                             <!-- LIKE, DISLIKE, LYRICS BUTTONS -->
-                            <div class="row">
+                            <div class="row" style="margin-bottom: 0px;">
                                 <div class="col s12 m12 l12">
                                     <a class="waves-effect waves-dark btn #eeff41 lime accent-2 black-text" id="liked"><i class="material-icons">thumb_up</i></a>
                                     <a class="waves-effect waves-dark btn #eeff41 lime accent-2 black-text" id="disliked"><i class="material-icons">thumb_down</i></a>
@@ -124,68 +111,45 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- carousel content here -->
-
+                <!-- CAROUSEL -->
                 <div class="carousel">
-                    <h5 id="similar-artists" class="white-text"></h5>
-                    <a id="c0" class="carousel-item #ff5722 deep-orange" href="#one!" style="z-index: -2; opacity: 0.2; visibility: visible; transform: translateX(118px) translateY(100px) translateX(-400px) translateZ(-400px);">
+                    <h5 id="similar-artists" class="white-text" style="text-align: center;">SUGGESTED ARTISTS</h5>
+                    <a id="c0" class="carousel-item" href="#one!" style="z-index: -2; opacity: 0.2; visibility: visible; transform: translateX(118px) translateY(100px) translateX(-400px) translateZ(-400px);">
                         <img class="i0" src="assets/images/lily-allen.jpg">
                         <h6 class="n0" style="text-align: center; color:white;">LILLY ALLEN</h6>
                     </a>
-                    <a id="c1" class="carousel-item #ff5722 deep-orange" href="#two!" style="transform: translateX(118px) translateY(100px) translateX(-200px) translateZ(-200px); z-index: -1; opacity: 0.6; visibility: visible;">
+                    <a id="c1" class="carousel-item" href="#two!" style="transform: translateX(118px) translateY(100px) translateX(-200px) translateZ(-200px); z-index: -1; opacity: 0.6; visibility: visible;">
                         <img class="i1" src="assets/images/mt-joy.jpg">
                         <h6 class="n1" style="text-align: center; color:white;">MT. JOY</h6>
                     </a>
-                    <a id="c2" class="carousel-item active #ff5722 deep-orange" href="#three!" style="transform: translateX(118px) translateY(100px) translateX(0px) translateX(0px) translateZ(0px); z-index: 0; opacity: 1; visibility: visible;">
+                    <a id="c2" class="carousel-item active" href="#three!" style="transform: translateX(118px) translateY(100px) translateX(0px) translateX(0px) translateZ(0px); z-index: 0; opacity: 1; visibility: visible;">
                         <img class="i2" src="assets/images/watsky.jpg">
                         <h6 class="n2" style="text-align: center; color:white;">WATSKY</h6>
                     </a>
-                    <a id="c3" class="carousel-item #ff5722 deep-orange" href="#four!" style="transform: translateX(118px) translateY(100px) translateX(200px) translateZ(-200px); z-index: -1; opacity: 0.6; visibility: visible;">
+                    <a id="c3" class="carousel-item" href="#four!" style="transform: translateX(118px) translateY(100px) translateX(200px) translateZ(-200px); z-index: -1; opacity: 0.6; visibility: visible;">
                         <img class="i3" src="assets/images/sander-van-doorn.jpg">
                         <h6 class="n3" style="text-align: center; color:white;">SANDER VAN DOORN</h6>
                     </a>
-                    <a id="c4" class="carousel-item #ff5722 deep-orange" href="#five!" style="transform: translateX(118px) translateY(100px) translateX(400px) translateZ(-400px); z-index: -2; opacity: 0.2; visibility: visible;">
+                    <a id="c4" class="carousel-item" href="#five!" style="transform: translateX(118px) translateY(100px) translateX(400px) translateZ(-400px); z-index: -2; opacity: 0.2; visibility: visible;">
                         <img class="i4" src="assets/images/glass-animals.jpg">
                         <h6 class="n4" style="text-align: center; color:white;">GLASS ANIMALS</h6>
                     </a>
                 </div>
             </div>
         </div>
-
     </main>
-
     <!-- FOOTER CONTENT -->
     <footer class="page-footer #212121 grey darken-4">
         <div class="container #212121 grey darken-4">
-            <div class="row #212121 grey darken-4">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright #212121 grey darken-4">
-            <div class="container white-text">
+            <div class="footer-copyright #212121 grey darken-4 text-white">
                 © 2019 Copyright WeAreNumber4
-                <a class="white-text right" href="#!">More Links</a>
             </div>
-        </div>
+            <br>
+            <br>
     </footer>
-
     <!-- FIREBASE -->
     <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-database.js"></script>
-
     <!-- Initialize Firebase -->
     <script src="assets/Javascript/init.js"></script>
 
